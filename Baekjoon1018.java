@@ -4,7 +4,7 @@ import java.io.*;
 
 /*
  * Repainting the chessBoard
- * 							   번갈아
+ * 							      번갈아
  * 1. The chessBoard is painted alternately white and black.
  * 
  * 2. Minimum number of squares that need to be repainted after 
@@ -63,7 +63,7 @@ public class Baekjoon1018 {
 		
 		for(int i = 0; i + 8 <= n; i++) {
 			for(int j = 0; j + 8 <= m; j++) {
-				int cnt = checkChessBoard(i, j);
+				int cnt = secondSolve(i, j);
 				minCnt = cnt < minCnt ? cnt : minCnt;
 			}
 		}
@@ -73,7 +73,8 @@ public class Baekjoon1018 {
 		bw.close();
 	}
 
-	private static int checkChessBoard(int rowStart, int columnStart) {
+	// memory : 15140KB  Time : 160ms
+	private static int firstSolve(int rowStart, int columnStart) {
 		int[] cnt = new int[2];
 		
 		for(int i = rowStart; i < rowStart + 8; i++) {
@@ -84,6 +85,34 @@ public class Baekjoon1018 {
 						== answer[1][i - rowStart][j - columnStart] ) ) cnt[1]++;
 			}
 		}
+		
+		return cnt[0] < cnt[1] ? cnt[0] : cnt[1];
+	}
+	
+	// memory : 15308KB  Time : 156ms
+	private static int secondSolve(int rowStart, int columnStart) {
+		int[] cnt = new int[2];
+
+		for (int i = rowStart; i < rowStart + 8; i += 2) {
+			// case 1. 1-line 'W','B', ...
+			for (int j = columnStart; j < columnStart + 8; j += 2) {
+				if( !( chess[i][j] == 'W' ) ) cnt[0]++;
+				if( !( chess[i][j + 1] == 'B' ) ) cnt[0]++;
+				
+				if( !( chess[i + 1][j] == 'B' ) ) cnt[0]++;
+				if( !( chess[i + 1][j + 1] == 'W' ) ) cnt[0]++;
+			}
+			
+			// case 2. 1-line 'B','W', ...
+			for (int j = columnStart; j < columnStart + 8; j += 2) {
+				if( !( chess[i][j] == 'B' ) ) cnt[1]++;
+				if( !( chess[i][j + 1] == 'W' ) ) cnt[1]++;
+				
+				if( !( chess[i + 1][j] == 'W' ) ) cnt[1]++;
+				if( !( chess[i + 1][j + 1] == 'B' ) ) cnt[1]++;
+			}
+		}
+		
 		return cnt[0] < cnt[1] ? cnt[0] : cnt[1];
 	}
 }
