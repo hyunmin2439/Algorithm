@@ -4,7 +4,7 @@ import java.io.*;
 
 /*
  * Repainting the chessBoard
- * 							      번갈아
+ * 
  * 1. The chessBoard is painted alternately white and black.
  * 
  * 2. Minimum number of squares that need to be repainted after 
