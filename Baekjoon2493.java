@@ -1,4 +1,4 @@
-package solved.submit;
+package uploaded;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-// Memory : 73064KB  time : 752ms
+// Memory : 72308KB  time : 660ms
 public class Baekjoon2493 {
 	
 	static int N, idx, hIdx, top = -1;
@@ -52,23 +52,23 @@ public class Baekjoon2493 {
 		if(topList[idx - 1] > topList[idx]) {
 			hIdx = idx - 1;
 			hList[++top] = hIdx; // hList에 담음
+			return;
 		}
-		// 높았던 탑들 찾아서 막히는 부분 찾기
-		else {
-			for (int i = top; i >= 0; i--) {
-				hIdx = hList[top--]; // 스택 pop : 아래쪽 예시 그림 참조
-				if(topList[hIdx] > topList[idx]) {
-					hList[++top] = hIdx; // 자신보다 높을경우 스택 push
-					break;
-				}
-				else hIdx = 0;
+		// 위 조건에 걸리지 않을 시
+		for (int i = top; i >= 0; i--) {
+			hIdx = hList[top--]; 
+			
+			if(topList[hIdx] > topList[idx]) {
+				hList[++top] = hIdx; return;
 			}
+			
+			hIdx = 0;
 		}
 	}
 }
 
 /*
-Stack 변화 예시
+Stack 변화 예시 : findWaveDest() 함수 이해
 
 n번탑     n번탑
  1.hList [ 0 ]    / 0 : dummy
