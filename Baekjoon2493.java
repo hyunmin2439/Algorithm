@@ -89,13 +89,13 @@ n번탑     n번탑
  7번 탑 이후 부터는 4번 탑에 신호가 도달할리가 없음. 이유는 6번에서 다 걸리기 때문에.
  때문에 Stack에서 pop하여 검사를 하고 자신보다 높을 경우에만 다시 push를 한다.
    
-		-----l            
-		     l-----------l
-		     l-----l     l
-		     l     l     l--l
-		--l  l     l     l  l
-		  l  l     l--l  l  l
-		  l  l--l  l  l  l  l
+	-----l            
+	     l-----------l
+             l-----l     l
+             l     l     l--l
+        --l  l     l     l  l
+          l  l     l--l  l  l
+          l  l--l  l  l  l  l
 Index	  1  2  3  4  5  6  7
 dest pos  0  0  2  2  4  2  6
 */
