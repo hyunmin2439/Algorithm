@@ -9,7 +9,6 @@ public class Baekjoon14888 {
 
 	static int N, max, min;
 	static int[] num;
-	static int[] calc;
 	static int[] calCnt;
 	
 	public static void main(String[] args) throws IOException {
@@ -19,7 +18,6 @@ public class Baekjoon14888 {
 		max = Integer.MIN_VALUE;
 		min = Integer.MAX_VALUE;
 		num = new int[N];
-		calc = new int[N - 1];
 		calCnt = new int[4];
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
