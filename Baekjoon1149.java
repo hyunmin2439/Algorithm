@@ -1,4 +1,4 @@
-package solved.submit;
+package uploaded;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -50,6 +50,15 @@ public class Baekjoon1149 {
 					}
 				}
 			}
+		}
+		
+		// 더 깔끔한 코드
+		for (int i = 1; i <= N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			
+			rgb[i][0] = Math.min(rgb[i - 1][1], rgb[i - 1][2]) + Integer.parseInt(st.nextToken());
+			rgb[i][1] = Math.min(rgb[i - 1][0], rgb[i - 1][2]) + Integer.parseInt(st.nextToken());
+			rgb[i][2] = Math.min(rgb[i - 1][0], rgb[i - 1][1]) + Integer.parseInt(st.nextToken());
 		}
 		
 		// 최종 N번집까지 고려된 최적비용 중 제일 작은 최적비용 출력
