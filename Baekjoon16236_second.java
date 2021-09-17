@@ -7,6 +7,13 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+// bfs를 통해 먹을 수 있는 물고기 탐색
+// bfs 탐색 중 먹을 수 있는 최소 물고기 보다 거리가 먼 곳은 가지치기
+// PriorityQueue를 통해 거리 짧고 y, x값이 작은 물고기 가져옴
+// 상어 위치 및 상태 변경
+// 더 이상 물고기를 먹을 수 없을 때까지 반복
+
+// memory:14728KB / time:136ms
 public class Baekjoon16236_second {
 
 	static int N, time;
