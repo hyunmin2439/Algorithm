@@ -22,6 +22,8 @@ import java.util.StringTokenizer;
  * 이동을 하며 몸의 길이를 늘렸다가, 사과를 먹지 못하면 몸을 다시 줄임
  * 
  * 즉, 이동하면 앞쪽에 좌표를 넣고, 사과를 먹지 못하면 뒤쪽의 좌표를 빼는 식으로 풀이
+ *
+ * Memory:14508KB / Time:140ms
  */
 
 public class Baekjoon3190 {
