@@ -7,13 +7,15 @@ import java.util.StringTokenizer;
 
 /* 두 용액
  * 
- * 문제명만 봐도 알 수 있듯이 Two Pointer 기법을 사용하여 해결하는 문제
+ * 문제명만 봐도 알 수 있듯 Two Pointer 기법을 사용하여 해결하는 문제
  * 
  * 왼쪽 포인트를 0로 오른쪽 포인트를 N - 1 위치에 두고 값을 더한 뒤
  * 
  * 0에 가까운지 확인을 위하여 절대값을 취하고 min변수와 비교 더 작은 값으로 대체
  * 
  * 이후, left 위치, right 위치 절대값 중 큰쪽의 포인터를 옮김
+ *
+ * Memory:28616KB / Time:428ms
  */
 
 public class Baekjoon2470 {
