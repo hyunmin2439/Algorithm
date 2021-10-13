@@ -2,7 +2,13 @@ package algo;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+
+/* Bottom-UP DP
+ * 
+ * 생각보다 그렇게 쉽지만은 않은 문제인 것 같다.
+ * 
+ * 아직 DP에 익숙하지 않아서 그런지 점화식 세우는 시간이 오래 걸렸다.
+ */
 
 public class Baekjoon2579 {
 
@@ -11,37 +17,29 @@ public class Baekjoon2579 {
 		
 		int N = Integer.parseInt(in.readLine()); // N : 총 계단수
 		
+		int[] score = new int[N + 1];
 		int[] dp = new int[N + 1];
 		
-		dp[1] = Integer.parseInt(in.readLine()); // 첫번째 계단
-		dp[2] = Integer.parseInt(in.readLine()) + dp[1]; // 첫번째 계단 + 두번째 계단
-		
-		boolean check = true; // 두칸 연속으로 올라옴, 이후 세번째 계단 밟을 수 없음
-		
-		for (int i = 3; i <= N; i++) {
-			int score = Integer.parseInt(in.readLine()); // 현재 계단 점수
-			
-			// 두칸 연속으로 올라왔을 때
-			if( check ) {
-				dp[i] = score + dp[i - 2];
-				check = false;
-			}
-			// 두칸을 한번에 올라왔을 때
-			else { // 누적 점수 비교
-				
-				// 점수가 같을 때에는 두칸을 한꺼번에 
-				// 올라오면 다음 것도 밟을 수 있으니 더 이득이다.
-				if(dp[i - 1] <= dp[i - 2]) {
-					dp[i] = score + dp[i - 2];
-				}
-				else {
-					dp[i] = score + dp[i - 1];
-					check = true;
-				}
-			}
+		for (int i = 1; i <= N; i++) {
+			score[i] = Integer.parseInt(in.readLine());
 		}
 		
-		System.out.println(Arrays.toString(dp));
+		// 1, 2가 입력으로 들어올 수 도 있기 때문
+		if( N < 3 ) {
+			System.out.println(N == 1 ? score[1] : score[1] + score[2]);
+			return;
+		} else {
+			dp[1] = score[1]; // 첫번째 계단
+			dp[2] = score[1] + score[2]; // 첫번째 계단 + 두번째 계단
+		}
+		
+		for (int i = 3; i <= N; i++) {
+			// 현재 계단을 밟으려면
+			// 1. 전 전 계단을 밟고 오거나
+			// 2. 전 계단을 밟고 오거나 -> 전 전 계단을 밟으면 안됨 -> 전 전 전 계단을 밟고 와야함
+			dp[i] = Math.max(dp[i - 2], dp[i - 3] + score[i - 1]) + score[i];
+		}
+		
 		System.out.println(dp[N]);
 		
 		in.close();
