@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Backjoon1100 {
+public class BJ_1100_하얀칸_bruteforce {
 	
 	static int res;
 	static final int len = 8;
