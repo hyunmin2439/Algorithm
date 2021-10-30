@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
  * Memory:47260KB / Time:452ms
  */
 
-public class Baekjonn2447 {
+public class BJ_2447_별찍기10_recursive {
 
 	static int N;
 	static char[][] matrix;
