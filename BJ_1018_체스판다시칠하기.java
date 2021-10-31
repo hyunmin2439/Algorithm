@@ -18,7 +18,7 @@ import java.io.*;
  * Minimum number of squares to repaint
  */
 
-public class Baekjoon1018 {
+public class BJ_1018_체스판다시칠하기 {
 	static char[][] chess;
 	static char[][][] answer = 
 		{ { { 'W','B','W','B','W','B','W','B' },
