@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 /* 단순히 순열 완탐으로 푸니 시간초과 */
 
-public class BJ_1026_보물_1_fail_Permutation {
+public class BJ_1026_보물_1_fail {
     
     private static int N, S;
     private static int[] A, B;
