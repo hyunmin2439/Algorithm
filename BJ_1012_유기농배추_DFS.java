@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 // 유기농 배추
 // 전체를 완전탐색하면서 DFS
-public class Baekjoon1012 {
+public class BJ_1012_유기농배추_DFS {
 
     // T 테스트 케이스, N * M 행렬, K 배추 개수
 	static int T, N, M, K;
