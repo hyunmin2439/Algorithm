@@ -23,7 +23,7 @@ import java.io.*;
  * distance <= count * count + count
  */
 
-public class Baekjoon1011 {
+public class BJ_1011_FlyMeToTheAlphaCentauri {
 
 	public static void main(String[] args) throws IOException {
 		int cnt = 0;
