@@ -14,7 +14,7 @@ import java.io.*;
  * "-1" If infinite => Same coordinates
  */
 
-public class Baekjoon1002 {
+public class BJ_1002_터렛 {
 
 	public static void main(String[] args) throws IOException {
 		StringBuilder sb = new StringBuilder();
