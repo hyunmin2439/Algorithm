@@ -8,7 +8,7 @@ import java.util.Queue;
 
 // 전체를 순회하면서 bfs로 방문한 지점 체크
 // 전체 bfs 횟수 = 구역 수
-public class Baekjoon10026 {
+public class BJ_10026_적록색약_BFS {
 
 	static int N;
 	static char[][] nomal;
