@@ -18,7 +18,7 @@ import java.io.*;
  * can be built under a given condition.
  */
 
-public class Baekjoon1010 {
+public class BJ_1010_다리놓기 {
 
 	public static void main(String[] args) throws IOException {
 		StringBuilder sb = new StringBuilder();
