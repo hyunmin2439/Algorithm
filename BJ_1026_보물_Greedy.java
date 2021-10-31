@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * 
  * */
 
-public class Baekjoon1026_Greedy {
+public class BJ_1026_보물_Greedy {
 
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
