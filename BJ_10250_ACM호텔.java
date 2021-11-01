@@ -19,7 +19,7 @@ import java.io.*;
  * The room number to which the guest should be assigned. 
  */
 
-public class Baekjoon10250 {
+public class BJ_10250_ACM호텔 {
 
 	public static void main(String[] args) throws IOException {
 		int t, h, w, n, cnt = 0;
