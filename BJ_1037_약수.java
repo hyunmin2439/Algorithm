@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * n (n is 32-bit signed integer)
  */
 
-public class Baekjoon1037 {
+public class BJ_1037_약수 {
 
 	public static void main(String[] args) throws IOException {
 		int min = Integer.MAX_VALUE;
