@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 // DP 문제
 // int 배열을 사용하면 오버플로우
-public class Baekjoon9461 {
+public class BJ_9461_파도반수열_DP {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
