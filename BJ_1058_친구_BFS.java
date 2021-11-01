@@ -19,7 +19,7 @@ import java.util.Queue;
  * Memory:14900KB / Time:156ms
  */
 
-public class Baekjoon1058 {
+public class BJ_1058_친구_BFS {
 
 	static int N, ans;
 	static boolean[][] adjMatrix;
