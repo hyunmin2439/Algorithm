@@ -3,7 +3,7 @@ package solved;
 import java.io.*;
 import java.math.BigInteger;
 
-public class Baekjoon10757 {
+public class BJ_10757_큰수AaddB_1_BigInteger {
 
 	public static void main(String[] args) throws IOException {
 		BigInteger b1, b2, b3;
