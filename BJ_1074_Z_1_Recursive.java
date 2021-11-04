@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // 백준 Z
-public class Baekjoon1074 {
+public class BJ_1074_Z_1_Recursive {
 	
 	static int N, R, C, ans;
 	static boolean exit;
