@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  * int 범위 넘어가기 때문에 long
  */
 
-public class Baekjoon1076 {
+public class BJ_1076_저항 {
 
 	static String[] color = { "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" };
 	static long[] value = { 1, 10, 100, 1_000, 10_000, 100_000, 1_000_000, 10_000_000, 100_000_000, 1_000_000_000 };
