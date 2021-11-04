@@ -18,7 +18,7 @@ import java.io.OutputStreamWriter;
  * 1 <= 한수의 총 개수 <= N
  */
 
-public class Baekjoon1065 {
+public class BJ_1065_한수 {
 	
 	public static int checkHanNumber(int n) {
 		int cnt = 99;
