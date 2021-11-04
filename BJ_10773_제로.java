@@ -21,7 +21,7 @@ import java.util.Stack;
  * Sum of the remaining numbers in stack
  */
 
-public class Baekjoon10773 {
+public class BJ_10773_제로 {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
