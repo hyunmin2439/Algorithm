@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class Baekjoon11022 {
+public class BJ_11022_AaddBminus8 {
 
 	public static void main(String[] args) {
 		int T, A, B;
