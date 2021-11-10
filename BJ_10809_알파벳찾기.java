@@ -17,7 +17,7 @@ import java.io.OutputStreamWriter;
  * a : 97 ~ z : 122
  */
 
-public class Baekjoon10809 {
+public class BJ_10809_알파벳찾기 {
 
 	public static void main(String[] args) throws IOException {
 		int[] alphaPos = new int[26];
