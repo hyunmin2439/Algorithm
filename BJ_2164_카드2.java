@@ -19,7 +19,7 @@ import java.util.Queue;
  * last card Number
  */
 
-public class BJ_2164_카드 {
+public class BJ_2164_카드2 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
