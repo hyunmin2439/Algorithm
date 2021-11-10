@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 // 정렬하고 누적합을 구하는 문제
 
 // memory:14412KB / time:152ms
-public class Baekjoon11399 {
+public class BJ_11399_ATM {
 
 	static int N, sum, res; // 사람의 수, 누적합, 결과값
 	static int[] time; // 사람들의 돈 인출시간
