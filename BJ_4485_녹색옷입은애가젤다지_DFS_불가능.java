@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 // 때문에 다익스트라 알고리즘을 사용하여 풀어야 한다.
 
 // 시간초과
-public class Baekjoon4485_DFS_불가능 {
+public class BJ_4485_녹색옷입은애가젤다지_DFS_불가능 {
 
 	static int N, t, min;
 	static int[][] map;
