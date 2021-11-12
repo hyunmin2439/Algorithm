@@ -19,7 +19,7 @@ import java.util.StringTokenizer;
 
 
 // Memory:32232KB / Time:660ms
-public class Baekjoon4485_Dijkstra_인접리스트 {
+public class BJ_4485_녹색옷입은애가젤다지_Dijkstra_인접리스트 {
 
 	static final int INF = 1_000_000;
 	
