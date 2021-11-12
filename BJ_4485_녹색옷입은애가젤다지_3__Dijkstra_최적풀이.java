@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
 // 다른 길로 둘러서 갈 경우 그 값은 더 적은 비용이 될 수가 없음, 때문에 visit체크하지 않아도 무방
 
 // Memory:19476KB / Time:252ms
-public class Baekjoon4485_Dijkstra_최적풀이 {
+public class BJ_4485_녹색옷입은애가젤다지_3_Dijkstra_최적풀이 {
 
 	static final int INF = 1_000_000;
 	
