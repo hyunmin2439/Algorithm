@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * Frequency of each m number
  */
 
-public class Baekjoon10816 {
+public class BJ_10816_숫자카드2 {
 	
 	public static void main(String[] args) throws IOException {
 		int[] arr = new int[20_000_001];
