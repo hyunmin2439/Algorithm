@@ -41,7 +41,7 @@ class Member {
 	}
 }
 
-public class Baekjoon10814 {
+public class BJ_10814_나이순정렬 {
 
 	public static void main(String[] args) throws IOException {
 		StringTokenizer st;
