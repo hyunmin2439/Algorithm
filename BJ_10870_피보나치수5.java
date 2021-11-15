@@ -15,7 +15,7 @@ import java.io.*;
  * 
  */
 
-public class Baekjoon10870 {
+public class BJ_10870_피보나치수5 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
