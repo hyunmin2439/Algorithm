@@ -23,7 +23,7 @@ import java.util.StringTokenizer;
  * as shown in the example above.
  */
 
-public class Baekjoon1158 {
+public class BJ_1158_요세푸스문제 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
