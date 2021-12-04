@@ -4,7 +4,7 @@ import java.util.StringTokenizer;
 
 // Memory:18584KB / Time:372ms
 
-public class BJ_2740_행렬곱셈 {
+public class BJ_2740_행렬곱셈_1 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
