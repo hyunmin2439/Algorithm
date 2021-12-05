@@ -20,7 +20,7 @@ import java.util.StringTokenizer;
 // 제곱 : 분할 정복 알고리즘 사용, O(logN)
 
 // Memory:14308KB / Time:172ms
-public class Baekjoon11401 {
+public class BJ_11401_이항계수3 {
 	
 	static final int MOD = 1_000_000_007;
 
