@@ -10,7 +10,7 @@ import java.io.OutputStreamWriter;
 // br.read를 쓰면 안되는 이유
 // String 형태이기 때문에 한글자씩 읽어서 각 데이터를 제대로 해석을 하지 못한다.
 
-public class Baekjoon10818 {
+public class BJ_10818_최소최대 {
 
 	public static void main(String[] args) {
 		int N, num, max, min;
