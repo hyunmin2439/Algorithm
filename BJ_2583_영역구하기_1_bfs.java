@@ -1,11 +1,14 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class BJ_2583_영역구하기 {
+// Memory:14832KB / Time:144ms
+
+public class BJ_2583_영역구하기_1_bfs {
 
 	static int M, N, K, cnt;
 	static boolean[][] visited;
@@ -39,7 +42,7 @@ public class BJ_2583_영역구하기 {
 			
 		}
 		
-		printPaper();
+		// printPaper();
 		
 		queue = new LinkedList<>();
 		list = new LinkedList<>();
@@ -53,6 +56,7 @@ public class BJ_2583_영역구하기 {
 			}
 		}
 		
+		Collections.sort(list);
 		System.out.println(list.size());
 		list.forEach( el -> System.out.print(el + " ") );
 		
@@ -76,8 +80,9 @@ public class BJ_2583_영역구하기 {
 				
 				if( !(0 <= ny && ny < M && 0 <= nx && nx < N) ) continue;
 				
-				if( visited[y][x] || isPainting[y][x] ) continue;
+				if( visited[ny][nx] || isPainting[ny][nx] ) continue;
 				
+				visited[ny][nx] = true;
 				queue.offer(new Node(ny, nx));
 			}
 		}
@@ -95,12 +100,12 @@ public class BJ_2583_영역구하기 {
 		
 	}
 	
-
 	// 디버깅용
 	private static void printPaper() {
 		for(int y = 0; y < M; y++) {
 			for(int x = 0; x < N; x++) {
-				System.out.print(isPainting[y][x]);
+				if( isPainting[y][x] ) System.out.print(1);
+				else System.out.print(0);
 			}
 			System.out.println();
 		}
