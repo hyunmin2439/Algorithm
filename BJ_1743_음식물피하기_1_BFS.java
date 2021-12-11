@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+/*
+ * Memory:15856KB / Time:180ms
+ */
+
 public class BJ_1743_음식물피하기_1_BFS {
 
 	static int N, M, K, maxSize;
@@ -12,7 +16,7 @@ public class BJ_1743_음식물피하기_1_BFS {
 	static Node[] garbage;
 	static Queue<Node> queue;
 	
-	static int[] dr = { -1, 1, 0, 1 };
+	static int[] dr = { -1, 1, 0, 0 };
 	static int[] dc = { 0, 0, -1, 1 };
 	
 	public static void main(String[] args) throws Exception {
