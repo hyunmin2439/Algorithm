@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * 
  */
 
-public class Baekjoon10828 {
+public class BJ_10828_스택 {
 	static Stack<String> stack;
 
 	public static void main(String[] args) throws IOException {
