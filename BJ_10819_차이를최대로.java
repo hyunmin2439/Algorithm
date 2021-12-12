@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Baekjoon10819 {
+public class BJ_10819_차이를최대로 {
 
 	static int N, max;
 	static int[] nums;
