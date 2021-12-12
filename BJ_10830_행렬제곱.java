@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 //분할 정복법 제곱 알고리즘 - O(logN)
 //행렬 곱셈에 적용
-public class Baekjoon10830 {
+public class BJ_10830_행렬제곱 {
 
 	static final int MOD = 1000;	
 	static int N;
