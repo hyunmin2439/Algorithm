@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * Memory:38328KB / Time:912ms
  */
 
-public class BJ_10974_모든순열_perm2 {
+public class BJ_10974_모든순열_3_perm2 {
 
 	static int N;
 	static boolean[] used;
