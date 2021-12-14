@@ -12,7 +12,7 @@ import java.io.*;
  * n!
  */
 
-public class Baekjoon10872 {
+public class BJ_10872_팩토리얼 {
 	
 	private static int factorial(int n) {
 		int result = n;
