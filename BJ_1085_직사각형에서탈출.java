@@ -15,7 +15,7 @@ import java.io.*;
  * 정답 출력
  */
 
-public class Baekjoon1085 {
+public class BJ_1085_직사각형에서탈출 {
 
 	public static void main(String[] args) {
 		int x, y, w, h, result;
