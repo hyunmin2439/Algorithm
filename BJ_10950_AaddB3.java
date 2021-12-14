@@ -6,7 +6,7 @@ import java.util.Scanner;
  * for문 A + B 합
 */
 
-public class Baekjoon10950 {
+public class BJ_10950_AaddB3 {
 
 	public static void main(String[] args) {
 		int T, A, B;
