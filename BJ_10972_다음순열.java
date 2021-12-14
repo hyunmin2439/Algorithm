@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * Memory: 19348KB / Time: 380ms
  */
 
-public class Baekjoon10972 {
+public class BJ_10972_다음순열 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
