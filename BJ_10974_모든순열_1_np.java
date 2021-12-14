@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * Memory:52788KB / Time:2072ms
  */
 
-public class BJ_10974_모든순열_np {
+public class BJ_10974_모든순열_1_np {
 
 	static int N;
 	static int[] arr;
