@@ -23,7 +23,7 @@ import java.util.StringTokenizer;
  * Memory:16268KB / Time:144ms
  */
 
-public class Baekjoon17471_두번째풀이 {
+public class BJ_17471_게리맨더링_2_bitMask {
 	
 	static int N, flag, min;
 	static int[] population;
