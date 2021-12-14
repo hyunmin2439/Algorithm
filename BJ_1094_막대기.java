@@ -19,7 +19,7 @@ import java.util.List;
  * Number of bars required for x-length
  */
 
-public class Baekjoon1094 {
+public class BJ_1094_막대기 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
