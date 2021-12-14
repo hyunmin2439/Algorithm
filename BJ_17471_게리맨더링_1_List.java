@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * Memory:16228KB / Time:164ms
  */
 
-public class Baekjoon17471_첫번째풀이 {
+public class BJ_17471_게리맨더링_1_List {
 	
 	static int N, flag, min;
 	static int[] population;
