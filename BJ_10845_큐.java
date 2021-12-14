@@ -9,7 +9,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Baekjoon10845 {
+public class BJ_10845_큐 {
 
 	static int N;
 	static String inst; 
