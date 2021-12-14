@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
  * A + B (0 0 출력X)
  */
 
-public class Baekjoon10952 {
+public class BJ_10952_AaddB5 {
 
 	public static void main(String[] args) {
 		int 	  A; 
