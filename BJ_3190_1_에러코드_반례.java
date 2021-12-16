@@ -2,7 +2,7 @@ package solved.submit;
 
 import java.io.IOException;
 
-public class Baekjoon3109_문제있는코드_반례 {
+public class BJ_3190_1_에러코드_반례 {
 
 	static int R, C, cnt;
 	static boolean[][] map;
