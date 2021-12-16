@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 // 이항계수
 // 파스칼 삼각형 - dp
 
-public class Baekjoon11050 {
+public class BJ_11050_이항계수1_1_DP {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
