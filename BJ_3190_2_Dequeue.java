@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
  * Memory:14508KB / Time:140ms
  */
 
-public class Baekjoon3190 {
+public class BJ_3190_2_Dequeue {
 
 	static final int EMPTY = 0, SNAKE = 1, APPLE = 2;
 	
