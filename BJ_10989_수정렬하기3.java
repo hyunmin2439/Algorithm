@@ -13,7 +13,7 @@ import java.io.*;
  * n-line Ascending sort
  */
 
-public class Baekjoon10989 {
+public class BJ_10989_수정렬하기3 {
 
 	public static void main(String[] args) throws IOException {
 		int maxNum = 0;
