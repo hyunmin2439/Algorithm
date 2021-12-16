@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * Memory: 14240KB / Time:124ms
  */
 
-public class Baekjoon11047 {
+public class BJ_11047_동전0_1_Greedy {
 
 	static int N, K, totCnt;
 	static int[] valueOfCoins;
