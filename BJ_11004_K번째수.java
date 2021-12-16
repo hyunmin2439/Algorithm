@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * ak
  */
 
-public class Baekjoon11004 {
+public class BJ_11004_K번째수 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
