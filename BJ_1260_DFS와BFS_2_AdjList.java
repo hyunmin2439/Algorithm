@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 // memory : 18588KB / time : 236ms
-public class Baekjoon1260_AdjList {
+public class BJ_1260_DFS와BFS_2_AdjList {
 	
 	// 정점의 개수, 간선의 개수, 시작 정점 번호
 	static int N, M, V;
