@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * 깊이 생각할 필요없이 주어진 조건에 따라 재귀가 아닌 반복문으로 구현만 하면 되는 문제
  */
 
-public class Baekjoon9184 {
+public class BJ_9184_신나는함수실행_1_dp {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
