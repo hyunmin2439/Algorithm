@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 // Memory:18136KB / Time:424ms
-public class Baekjoon11403 {
+public class BJ_11403_경로찾기 {
 
 	static int N;
 	static int[][] adjMatrix, printMatrix;
