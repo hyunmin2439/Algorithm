@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 //memory : 20372KB / time : 272ms
-public class Baekjoon1260_AdjMatrix {
+public class BJ_1260_DFS와BFS_1_AdjMatrix {
 	
 	// 정점의 개수, 간선의 개수, 시작 정점 번호
 	static int N, M, V;
