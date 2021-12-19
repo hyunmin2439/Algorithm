@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Baekjoon9205 {
+public class BJ_9205_맥주마시면서걸어가기_Floyd {
 
 	static final int infinity = 1_000_000;
 	
