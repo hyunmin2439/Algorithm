@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 // 파스칼 삼각형 - dp
 // 11050과 다르게 공간복잡도를 줄임.
 
-public class Baekjoon11051 {
+public class BJ_11051_이항계수2 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
