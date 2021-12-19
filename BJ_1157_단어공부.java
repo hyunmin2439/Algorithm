@@ -12,7 +12,7 @@ import java.io.*;
  */
 
 
-public class Baekjoon1157 {
+public class BJ_1157_단어공부 {
 	final static int alen = 26;
 	static int[][] alphaNum = new int[2][26];
 
