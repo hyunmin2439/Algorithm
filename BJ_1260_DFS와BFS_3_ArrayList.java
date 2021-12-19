@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 
 // memory : 20204KB / time : 308ms
 // 중첩 List 사용
-public class Baekjoon1260_ArrayList {
+public class BJ_1260_DFS와BFS_3_ArrayList {
 	
 	// 정점의 개수, 간선의 개수, 시작 정점 번호
 	static int N, M, V;
