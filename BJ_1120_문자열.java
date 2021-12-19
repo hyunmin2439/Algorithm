@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 // 때문에 A 앞 뒤에는 같은 단어를 붙일 수 있으니
 // B의 몇번째 index에 위치 시키느냐에 따라 글자수 차이 결정됨
 
-public class Baekjoon1120 {
+public class BJ_1120_문자열 {
 
 	static int min;
 	static String A, B;
