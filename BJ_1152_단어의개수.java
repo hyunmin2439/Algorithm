@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * 사용하니 틀렸음. 아마 메모리 문제에서 걸리는 것 같음.
  */
 
-public class Baekjoon1152 {
+public class BJ_1152_단어의개수 {
 
 	public static void main(String[] args) throws IOException {
 		// 내가 푼 방법
