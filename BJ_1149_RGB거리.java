@@ -17,7 +17,7 @@ import java.util.StringTokenizer;
 // 차례차례 내려가면서 마지막 N번째 집까지 계산하고 나면
 // N번째 3가지 경우중 가장 작은 최적비용을 선택.
 
-public class Baekjoon1149 {
+public class BJ_1149_RGB거리 {
 	
 	static int N;
 	static int[][] rgb;
