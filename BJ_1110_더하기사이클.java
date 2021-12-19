@@ -17,7 +17,7 @@ import java.io.OutputStreamWriter;
  * 출력 : 사이클 횟수
  */
 
-public class Baekjoon1110 {
+public class BJ_1110_더하기사이클 {
 
 	public static void main(String[] args) {
 		int N; // 입력
