@@ -14,7 +14,7 @@ import java.util.List;
  * If N is 1, nothing is output.
  */
 
-public class Baekjoon11653 {
+public class BJ_11653_소인수분해 {
 
 	public static void main(String[] args) throws IOException {
 		int n, div = 2;
