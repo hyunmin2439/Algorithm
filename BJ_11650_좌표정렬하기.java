@@ -43,7 +43,7 @@ class Point {
 	}
 }
 
-public class Baekjoon11650 {
+public class BJ_11650_좌표정렬하기 {
 
 	public static void main(String[] args) throws IOException {
 		List<Point> pList = new ArrayList<>();
