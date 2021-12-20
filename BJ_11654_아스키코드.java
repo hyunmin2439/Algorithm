@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
  * ASCII값
  */
 
-public class Baekjoon11654 {
+public class BJ_11654_아스키코드 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
