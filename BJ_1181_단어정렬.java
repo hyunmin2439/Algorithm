@@ -18,7 +18,7 @@ import java.util.*;
  * Sorted words, one word per line
  */
 
-public class Baekjoon1181 {
+public class BJ_1181_단어정렬 {
 
 	public static void main(String[] args) throws IOException {
 		Set<String> wordSet = new HashSet<>();
