@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 // 1. union-find 알고리즘 
 // 2. visit check로 집합의 수
 
-public class Baekjoon11724 {
+public class BJ_11724_연결요소의개수 {
 
 	static int N, M, res;
 	static int[] parents;
