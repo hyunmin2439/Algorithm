@@ -27,7 +27,7 @@ import java.io.*;
  * 
  */
 
-public class Baekjoon1193 {
+public class BJ_1193_분수찾기 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
