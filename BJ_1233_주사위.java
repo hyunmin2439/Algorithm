@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * Memory:14280KB / Time:124ms
  */
 
-public class Baekjoon1233 {
+public class BJ_1233_주사위 {
 
 	static int[] count;
 	static int[] dice;
