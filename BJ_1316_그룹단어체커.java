@@ -18,7 +18,7 @@ import java.io.*;
  */
 
 // int[] alpha 배열 => aaab b로 바뀌면 a위치 -1
-public class Baekjoon1316 {
+public class BJ_1316_그룹단어체커 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		int n, result = 0;
