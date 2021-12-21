@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
 // 이러한 visit 배열을 생성하는 부분만 어렵고 헷갈리는 부분이며 bfs로 시뮬레이션하는 부분은 크게 어려운 부분은 아님
 
 // Memory:16692KB / Time:144ms
-public class Baekjoon1194 {
+public class BJ_1194_달이차오른다가자_1_BFS {
 
 	static final char EMPTY = '.';
 	static final char WALL = '#';
