@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Baekjoon11866 {
+public class BJ_11866_요세푸스문제0 {
 
 	static int N, K;
 	static Queue<Integer> queue = new LinkedList<>();
