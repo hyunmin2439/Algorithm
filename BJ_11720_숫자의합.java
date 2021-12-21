@@ -21,7 +21,7 @@ import java.io.OutputStreamWriter;
  * n개의 숫자 합
  */
 
-public class Baekjoon11720 {
+public class BJ_11720_숫자의합 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		int sum = 0;
