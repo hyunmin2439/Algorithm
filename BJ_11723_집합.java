@@ -28,7 +28,7 @@ import java.util.StringTokenizer;
  * 
  */
 
-public class Baekjoon11723 {
+public class BJ_11723_집합 {
 
 	public static void main(String[] args) throws IOException {
 		Set<Integer> s = new HashSet<>();
