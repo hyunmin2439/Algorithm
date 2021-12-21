@@ -3,7 +3,7 @@ package solved.submit;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Baekjoon1244 {
+public class BJ_1244_스위치켜고끄기 {
 	static int n, nos; // nos : numberOfStudents
 	static boolean[] state;
 	
