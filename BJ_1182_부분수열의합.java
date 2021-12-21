@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // Memory:14144 / Time:216ms
-public class Baekjoon1182 {
+public class BJ_1182_부분수열의합 {
 
 	static int N, S, ans, flag, end;
 	static int[] arr;
