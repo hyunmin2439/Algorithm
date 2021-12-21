@@ -2,7 +2,7 @@ package com.algo;
 
 import java.io.*;
 
-public class Baekjoon1292 {
+public class BJ_1292_쉽게푸는문제 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
