@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // Memory:18832KB / Time:264ms
-public class Baekjoon14225 {
+public class BJ_14225_부분수열의합 {
 
 	static final int VISIT_MAX = 100_000;
 	
