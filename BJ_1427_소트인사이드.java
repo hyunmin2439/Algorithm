@@ -13,7 +13,7 @@ import java.util.Arrays;
  * ex) 2143 -> 4321
  */
 
-public class Baekjoon1427 {
+public class BJ_1427_소트인사이드 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
