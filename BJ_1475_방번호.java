@@ -15,7 +15,7 @@ import java.io.*;
  * setCnt : Number of Sets Required
  */
 
-public class Baekjoon1475 {
+public class BJ_1475_방번호 {
 
 	public static void main(String[] args) throws IOException {
 		int setCnt = 0;
