@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Baekjoon14889 {
+public class BJ_14889_스타트와링크 {
 	
 	static int N, half, min = Integer.MAX_VALUE;
 	static int[][] scoreBoard;
