@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Baekjoon1342 {
+public class BJ_1342_행운의문자열 {
 
 	static int cnt;
 	static char[] schar;
