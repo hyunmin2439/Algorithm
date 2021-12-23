@@ -23,7 +23,7 @@ import java.util.StringTokenizer;
  * Memory:69192 / Time:736ms
  */
 
-public class Baekjoon1504 {
+public class BJ_1504_특정한최단경로_1_dijkstra {
 
 	static final int INF = 100_000_000;
 	
