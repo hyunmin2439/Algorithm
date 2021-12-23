@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // Memory:35584KB / Time:392ms
-public class Baekjoon13305 {
+public class BJ_13305_주유소 {
 
 	static int N;
 	
