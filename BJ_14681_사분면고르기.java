@@ -2,7 +2,7 @@ package uploaded;
 
 import java.util.Scanner;
 
-/* Baekjoon14681
+/* BJ_14681
  * 문제
  * 사분면은 1부터 4까지 번호를 갖는다. "Quadrant n"은 "제n사분면"이라는 뜻이다.
  * 점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 
