@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * y
  */
 
-public class Baekjoon1476 {
+public class BJ_1476_날짜계산 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
