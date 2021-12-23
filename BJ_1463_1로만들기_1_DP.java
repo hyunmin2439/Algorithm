@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
 // dp[2|3][i / 2|3] + i % 2|3 + 1으로 풀려고 했으나 값이 안 맞는 케이스 생김
 
 // 1차원 배열 dp로 간단하게 풀 수 있는 문제
-public class Baekjoon1463 {
+public class BJ_1463_1로만들기_1_DP {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
