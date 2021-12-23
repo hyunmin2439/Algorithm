@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 // 최종적으로 도달할 수 없는 지점은 !visit && map[y][x] == LAND
 // 체크 해서 -1로 다 바꾸기
 
-public class Baekjoon14940 {
+public class BJ_14940_쉬운최단거리_1_BFS {
 
 	static final int NOT_LAND = 0;
 	static final int LAND = 1;
