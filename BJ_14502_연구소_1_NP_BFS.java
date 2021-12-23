@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Baekjoon14502 {
+public class BJ_14502_연구소_1_NP_BFS {
 
 	static final int SAFE = 0;
 	static final int WALL = 1;
