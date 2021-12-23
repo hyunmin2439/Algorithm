@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.
  */
 
-public class Baekjoon14681 {
+public class BJ_14681_사분면고르기 {
 
 	public static void main(String[] args) {
 		int x, y, qn;
