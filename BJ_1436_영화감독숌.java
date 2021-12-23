@@ -10,7 +10,7 @@ import java.io.*;
  * The 'n'h number including "666"
  */
 
-public class Baekjoon1436 {
+public class BJ_1436_영화감독숌 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
