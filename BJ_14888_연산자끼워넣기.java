@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Baekjoon14888 {
+public class BJ_14888_연산자끼워넣기 {
 
 	static int N, max, min;
 	static int[] num;
