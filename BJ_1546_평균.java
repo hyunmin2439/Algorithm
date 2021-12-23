@@ -20,7 +20,7 @@ import java.util.Arrays;
  * (출력값의 절대오차 또는 상대오차가 10^-2 이하이면 정답)
  */
 
-public class Baekjoon1546 {
+public class BJ_1546_평균 {
 
 	public static void main(String[] args) {
 		float tot = 0;
