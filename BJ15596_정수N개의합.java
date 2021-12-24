@@ -1,6 +1,6 @@
 package com.algo;
 
-public class Baekjoon15596 {
+public class BJ15596_정수N개의합 {
 
 	public static void main(String[] args) {
 		
