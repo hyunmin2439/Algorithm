@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 // 백준 15683 감시
-public class Baekjoon15683 {
+public class BJ_15683_감시 {
 
 	// N * M 맵 / K : CCTV 최대개수 / res : 사각지대 최소 크기
 	static int N, M, K, res;
