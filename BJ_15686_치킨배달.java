@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 // first Solve
-public class Baekjoon15686 {
+public class BJ_15686_치킨배달 {
 	
 	static int N, M, ckCnt, ckDist;
 	static char[][] city;
