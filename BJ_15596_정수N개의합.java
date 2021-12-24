@@ -1,6 +1,6 @@
 package com.algo;
 
-public class BJ15596_정수N개의합 {
+public class BJ_15596_정수N개의합 {
 
 	public static void main(String[] args) {
 		
