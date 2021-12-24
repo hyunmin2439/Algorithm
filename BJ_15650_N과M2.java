@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Baekjoon15650 {
+public class BJ_15650_N과M2 {
 
 	static int N, M, num[];
 	static BufferedReader  br;
