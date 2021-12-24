@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class Baekjoon15649 {
+public class BJ_15649_N과M1 {
 
 	static int N, M;
 	static int[] numArr;
