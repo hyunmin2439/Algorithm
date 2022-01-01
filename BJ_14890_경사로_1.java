@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+* 단순한 구현문제
+* 
+* Memory:15064KB / Time:148ms
+*/
+
 public class BJ_14890_경사로_1 {
 
 	static int N, L;
