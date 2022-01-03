@@ -6,7 +6,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Baekjoon1600 {
+/*
+* 3차원 visited boolean 배열을 쓰는 것이 핵심
+*
+* Memory:90616ms / Time:584ms
+*/
+
+public class BJ_1600_말이되고픈원숭이_1_BFS {
 
 	static int K, W, H;
 	static boolean[][] map;
