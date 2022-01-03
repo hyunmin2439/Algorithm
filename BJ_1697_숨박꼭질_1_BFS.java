@@ -9,7 +9,9 @@ import java.util.StringTokenizer;
 // BFS 문제
 // 방문했던 곳이라면 똑같이 반복됨 -> 쳐내기
 // BFS이기 때문에 목적지에 도착하면 그것이 최소 경로
-public class Baekjoon1697 {
+// Memory : 18548KB / Time:164ms
+
+public class BJ_1697_숨박꼭질_1_BFS {
 
 	static int maxLen = 100_001;
 	static int N, K;
