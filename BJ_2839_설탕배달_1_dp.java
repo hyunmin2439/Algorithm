@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
-public class Baekjoon2839_dp {
+public class BJ_2839_설탕배달_1_dp {
 
 	static int N, min;
 	static int[] dp;
