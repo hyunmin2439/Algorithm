@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 // 이후 거리 계산에 bfs추가, 최종 풀었으나 코드가 복잡함
 // list를 이용하여 거리에 따라 정렬하는 부분 불필요
 
-public class Baekjoon16236_first {
+public class BJ_16236_아기상어_1 {
 
 	static int N, move;
 	static List<Fish> list;
