@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 // 더 이상 물고기를 먹을 수 없을 때까지 반복
 
 // memory:14728KB / time:136ms
-public class Baekjoon16236_second {
+public class BJ_16236_아기상어_2 {
 
 	static int N, time;
 	static int[][] map;
