@@ -20,7 +20,7 @@ import java.io.*;
  * c - b로 한대 당 이득으로 a값을 나누는게 더 빠름.
  */
 
-public class Baekjoon1712 {
+public class BJ_1712_손익분기점 {
 
 	public static void main(String[] args) throws IOException {
 		int a, b, c, n, profit;
