@@ -1,11 +1,10 @@
-package algo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Baekjoon1717 {
+public class BJ_1717_집합의표현 {
 
 	static int N, M;
 	static int[] parents;

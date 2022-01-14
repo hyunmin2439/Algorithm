@@ -1,4 +1,4 @@
-package uploaded;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-/* Baekjoon15552
+/* BJ_15552_빠른AaddB
  * 빠른 A + B java 8 : 1.5초 제한
  * 
  * 입력
@@ -44,7 +44,7 @@ import java.io.OutputStreamWriter;
  * 개행을 해주어야할 경우에는 \n를 통해 따로 처리해야 함
  */
 
-public class Baekjoon15552 {
+public class BJ_15552_빠른AaddB {
 
 	public static void main(String[] args) {
 		int T, A, B;
