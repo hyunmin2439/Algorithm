@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BJ_11758 {
+public class BJ_11758_CCW {
 
 	private static int[] y, x;
 	
