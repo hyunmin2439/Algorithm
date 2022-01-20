@@ -13,7 +13,7 @@ import java.util.Queue;
 
 // 이중 가장 작은 값을 결과값으로 출력
 
-public class Baekjoon2146 {
+public class BJ_2146_다리만들기_BFS {
 
 	static int N;
 	static char[][] map;
