@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * Memory:309908KB / Time:896ms
  */
 
-public class Baekjoon1780 {
+public class BJ_1780_종이의개수 {
 	
 	static int N;
 	static int[] numOfPaper; // 0:-1 / 1:0 / 2:1
