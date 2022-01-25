@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 
 // 입력으로 주어지는 알파벳 소문자이며 중복 없음
 
-public class Baekjoon1759 {
+public class BJ_1759_암호만들기 {
 
 	static int L, C;
 	static char[] arr;
