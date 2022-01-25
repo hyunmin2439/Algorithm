@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 // Dijkstra 사용 최단 경로 구하기
 
 // Memory:110768KB / Time:2704
-public class Baekjoon1753 {
+public class BJ_1753_최단경로_1_Dijkstra {
 	
 	static final int INFINITY = 1_000_000;
 	
