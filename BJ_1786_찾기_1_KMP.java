@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 //KMP 알고리즘(Knuth–Morris–Pratt Algorithm)
 
-public class Baekjoon1786 {
+public class BJ_1786_찾기_1_KMP {
 
 	static int cnt;
 	static int[] pi;
