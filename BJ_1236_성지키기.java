@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * Memory:14256KB / Time:124ms
+ */
 public class BJ_1236_성지키기 {
 
 	private static int N, M;
