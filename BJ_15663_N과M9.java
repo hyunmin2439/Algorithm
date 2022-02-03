@@ -37,10 +37,10 @@ public class BJ_15663_N과M9 {
 	private static void solve() {
 		Arrays.sort(number);
 		
-		comp(new boolean[N], 0, "");
+		comb(new boolean[N], 0, "");
 	}
 	
-	private static void comp(boolean[] isUsed, int idx, String ans) {
+	private static void comb(boolean[] isUsed, int idx, String ans) {
 		if(idx == M) {
 			set.add( ans );
 			return;
@@ -50,7 +50,7 @@ public class BJ_15663_N과M9 {
 			if(isUsed[i]) continue;
 			
 			isUsed[i] = true;
-			comp(isUsed, idx + 1, ans + number[i] + " ");
+			comb(isUsed, idx + 1, ans + number[i] + " ");
 			isUsed[i] = false;
 		}
 	}
