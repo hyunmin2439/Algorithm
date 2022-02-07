@@ -1,4 +1,4 @@
-package no_upload;
+package solved;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
