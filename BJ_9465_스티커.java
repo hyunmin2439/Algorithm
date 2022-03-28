@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// Memory:111,888KB / Time:776ms
 public class BJ_9465_스티커 {
 
 	public static void main(String[] args) throws Exception {
