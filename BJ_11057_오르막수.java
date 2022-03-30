@@ -38,8 +38,9 @@ public class BJ_11057_오르막수 {
 		int N = Integer.parseInt(in.readLine());
 		final int MOD = 10_007;
 
-		int[][] dp = new int[2][11];
-
+		int[][] dp = new int[2][11]; // 공간복잡도 낮춤
+		
+		// 기본 초기화
 		for (int i = 0; i < 10; i++) {
 			dp[1][i] = 1;
 			dp[1][10] += dp[1][i];
@@ -52,9 +53,10 @@ public class BJ_11057_오르막수 {
 			
 			dp[to][0] = dp[from][10];
 			dp[to][10] += dp[to][0];
-			dp[from][10] = 0;
+			dp[from][10] = 0; // 0으로 초기화 하지 않으면 계속 더해짐
 
 			for (int j = 1; j < 10; j++) {
+				// 음수값 방지를 위해 MOD를 더하고 MOD를 나눔
 				dp[to][j] = (MOD + dp[to][j - 1] - dp[from][j - 1]) % MOD;
 				dp[to][10] = (MOD + dp[to][10] + dp[to][j]) % MOD;
 			}
