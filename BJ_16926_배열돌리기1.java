@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Baekjoon16926 {
+public class BJ_16926_배열돌리기1 {
 	static int N, M, R;
 	static int[][] area;
 	
