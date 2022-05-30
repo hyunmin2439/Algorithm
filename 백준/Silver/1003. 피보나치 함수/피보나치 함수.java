@@ -1,4 +1,30 @@
+package solved;
+
 import java.io.*;
+
+/*
+ * C++ Source Code
+ * int fibonacci(int n) {
+ *   if (n == 0) {
+ *      printf("0");
+ *      return 0;
+ *   } else if (n == 1) {
+ *      printf("1");
+ *      return 1;
+ *   } else {
+ *      return fibonacci(n‐1) + fibonacci(n‐2);
+ *   }
+ * }
+ * 
+ * How many times will 0 and 1 be printed?
+ * 
+ * Input
+ * T
+ * n (0 <= N <= 40)
+ * 
+ * Output
+ * 0 1 count
+ */
 
 public class Main {
 

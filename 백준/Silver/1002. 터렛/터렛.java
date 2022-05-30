@@ -1,4 +1,18 @@
+package solved;
+
 import java.io.*;
+
+/*
+ * Input
+ * t
+ * x1 y1 r1 x2 y2 r2
+ * ...
+ * t-line
+ * 
+ * Output
+ * The number of contacts in two circles with r1 and r2 radii.
+ * "-1" If infinite => Same coordinates
+ */
 
 public class Main {
 
@@ -27,15 +41,15 @@ public class Main {
 
 			int res = 2;
 
-			if (x1 == x2 && y1 == y2 && r1 == r2)
+			if (x1 == x2 && y1 == y2 && r1 == r2) // Same coordinates
 				res = -1;
-			else if (distance < minusR)
+			else if (distance < minusR)	// Contactless Internal circle
 				res = 0;
-			else if (distance > plusR)
+			else if (distance > plusR) //  Contactless External circle
 				res = 0;
-			else if (distance == plusR)
+			else if (distance == plusR) // External circle with contact
 				res = 1;
-			else if (distance == minusR)
+			else if (distance == minusR) // Internal circle with contact
 				res = 1;
 
 			sb.append(res + "\n");
