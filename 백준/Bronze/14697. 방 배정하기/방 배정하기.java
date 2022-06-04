@@ -15,11 +15,10 @@ public class Main {
 		
 		in.close();
 		
-		int aEnd = N / A, bEnd = N / B, cEnd = N / C;
-		for(int a = 0; a <= aEnd; a++) {
-			for(int b = 0; b <= bEnd; b++) {
-				for(int c = 0; c <= cEnd; c++) {
-					if(a * A + b * B + c * C == N) {
+		for(int a = 0; a <= N; a += A) {
+			for(int b = 0; b <= N; b += B) {
+				for(int c = 0; c <= N; c += C) {
+					if(a + b + c == N) {
 						System.out.print(1);
 						return;
 					}
