@@ -1,0 +1,43 @@
+package com.example;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class BJ_13417_카드문자열 {
+  public static void main(String[] args) throws Exception {
+      BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+      Deque<Character> deque = new LinkedList<>();
+      StringBuilder sb = new StringBuilder();
+      StringTokenizer st = null;
+      int T, N;
+      char c;
+      
+      T = Integer.parseInt(in.readLine());
+      
+      while(T-- > 0) {
+          N = Integer.parseInt(in.readLine());
+          st = new StringTokenizer(in.readLine());
+          
+          deque.offer(st.nextToken().charAt(0));
+          for(int i = 1; i < N; i++) {
+              c = st.nextToken().charAt(0);
+              
+              if(deque.peek() - c >= 0)
+                  deque.offerFirst(c);
+              else
+                  deque.offerLast(c);
+          }
+          
+          for(int i = 0; i < N; i++) {
+              sb.append(deque.removeFirst());
+          }
+          
+          sb.append('\n');
+      }
+      
+      System.out.print(sb);
+  }
+}
