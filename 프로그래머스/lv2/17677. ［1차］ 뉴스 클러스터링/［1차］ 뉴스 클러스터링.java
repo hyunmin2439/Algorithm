@@ -25,17 +25,6 @@ class Solution {
                 numOfIns++;
                 set2.remove(e1);
             }
-            
-//             for(Iterator<String> iterator = set2.iterator(); iterator.hasNext();) {
-//                 String e1 = set1.get(i);
-//                 String e2 = iterator.next();
-                
-//                 if( e1.equals(e2) ) {
-//                     numOfIns++;
-//                     iterator.remove();
-//                     break;
-//                 }
-//             }
         }
         
         answer = (int) ( ( (double) numOfIns / (set1.size() + set2.size()) ) * 65536 );
