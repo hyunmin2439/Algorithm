@@ -5,11 +5,10 @@ import java.util.Iterator;
 
 class Solution {
     public int solution(String str1, String str2) {
-        int answer = 0;
+        int numOfIns = 0, answer = 0;
         
         List<String> set1 = makeSet( str1.toLowerCase() );
         List<String> set2 = makeSet( str2.toLowerCase() );
-        List<String> ins = new ArrayList<>();
         
         //A와 집합 B가 모두 공집합일 경우에는 나눗셈이 정의되지 않으니 따로 J(A, B) = 1
         //A와 집합 B 중 둘 중 하나가 공집합인 경우 0
@@ -21,23 +20,25 @@ class Solution {
         }
         
         for(int i = 0; i < set1.size(); i++) {
-            for(Iterator<String> iterator = set2.iterator(); iterator.hasNext();) {
-                String e1 = set1.get(i);
-                String e2 = iterator.next();
-                
-                if( e1.equals(e2) ) {
-                    ins.add(e1);
-                    iterator.remove();
-                    break;
-                }
+            String e1 = set1.get(i);
+            if(set2.contains(e1)) {
+                numOfIns++;
+                set2.remove(e1);
             }
+            
+//             for(Iterator<String> iterator = set2.iterator(); iterator.hasNext();) {
+//                 String e1 = set1.get(i);
+//                 String e2 = iterator.next();
+                
+//                 if( e1.equals(e2) ) {
+//                     numOfIns++;
+//                     iterator.remove();
+//                     break;
+//                 }
+//             }
         }
         
-        // System.out.println( set1.toString() );
-        // System.out.println( set2.toString() );
-        // System.out.println( ins.toString() );
-        
-        answer = (int) ( ( (double) ins.size() / (set1.size() + set2.size()) ) * 65536 );
+        answer = (int) ( ( (double) numOfIns / (set1.size() + set2.size()) ) * 65536 );
         
         return answer;
     }
