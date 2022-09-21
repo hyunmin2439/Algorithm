@@ -14,11 +14,13 @@ class Solution {
         new_id = new_id.replaceAll("[.]{2,}", "."); // .문자가 2번 이상 반복
         
         // 4단계
-        if( !new_id.isEmpty() && new_id.charAt(0) == '.' )
-            new_id = new_id.substring(1, new_id.length());
+        new_id = new_id.replaceAll("^[.]|[.]$","");
         
-        if( !new_id.isEmpty() && new_id.charAt(new_id.length() - 1) == '.' )
-            new_id = new_id.substring(0, new_id.length() - 1);
+//         if( !new_id.isEmpty() && new_id.charAt(0) == '.' )
+//             new_id = new_id.substring(1, new_id.length());
+        
+//         if( !new_id.isEmpty() && new_id.charAt(new_id.length() - 1) == '.' )
+//             new_id = new_id.substring(0, new_id.length() - 1);
         
         // 5단계
         if( new_id.isEmpty() )
@@ -28,8 +30,7 @@ class Solution {
         if( new_id.length() > 15 ) {
             new_id = new_id.substring(0, 15);
             
-            if(new_id.charAt( new_id.length() - 1) == '.' )
-                new_id = new_id.substring(0, new_id.length() - 1);
+            new_id = new_id.replaceAll("^[.]|[.]$","");
         }
         
         // 7단계
