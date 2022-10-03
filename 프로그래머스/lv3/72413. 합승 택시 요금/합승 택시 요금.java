@@ -16,7 +16,7 @@ class Solution {
         int[][] shortest = new int[n + 1][n + 1];
 
         for(int i = 1; i <= n; i++) {
-            Arrays.fill(shortest[i], 10_000_001);
+            Arrays.fill(shortest[i], 20_000_000); // 딱 맞는 값으로 하니 실패함 최대값 높게 잡을 것.
             shortest[i][i] = 0;
         }
             
