@@ -31,7 +31,7 @@ public class Main {
 				map[y][x] = Integer.parseInt(st.nextToken());
 				switch(map[y][x]) {
 					case 0: emptyCnt++; break;
-					case 2: list.add(new Virus(y, x)); break;
+					case 2: list.add(new Virus(y, x, 0)); break;
 				}	
 			}
 		}
@@ -63,7 +63,7 @@ public class Main {
 	
 	private static int bfs(Queue<Virus> queue, int[][] map, boolean[][] visited, int N, int emptyCnt) {
 		Virus virus;
-		int ny = 0, nx = 0, sec = 0, size = queue.size();
+		int ny = 0, nx = 0, nsec = 0, size = queue.size();
 		
 		// 초기 바이러스들 방문 체크
 		for(int i = 0; i < size; i++) {
@@ -73,24 +73,22 @@ public class Main {
 		}
 		
 		while( !queue.isEmpty() ) {
-			if(emptyCnt == 0) return sec;
-			size = queue.size();
-			sec++;
+			virus = queue.poll();
 			
-			for(int i = 0; i < size; i++) {
-				virus = queue.poll();
+			if(emptyCnt == 0) return nsec;
+			
+			nsec = virus.sec + 1;
+			
+			for(int d = 0; d < dy.length; d++) {
+				ny = virus.y + dy[d];
+				nx = virus.x + dx[d];
 				
-				for(int d = 0; d < dy.length; d++) {
-					ny = virus.y + dy[d];
-					nx = virus.x + dx[d];
-					
-					if( !(0 <= ny && ny < N && 0 <= nx && nx < N) || visited[ny][nx] || map[ny][nx] == WALL ) continue;
-					
-					if(map[ny][nx] == EMPTY) emptyCnt--;
-					
-					queue.offer(new Virus(ny, nx));
-					visited[ny][nx] = true;
-				}
+				if( !(0 <= ny && ny < N && 0 <= nx && nx < N) || visited[ny][nx] || map[ny][nx] == WALL ) continue;
+				
+				if(map[ny][nx] == EMPTY) emptyCnt--;
+				
+				queue.offer(new Virus(ny, nx, nsec));
+				visited[ny][nx] = true;
 			}
 		}
 		
@@ -107,10 +105,11 @@ public class Main {
 }
 
 class Virus {
-	int y, x;
+	int y, x, sec;
 	
-	public Virus(int y, int x) {
+	public Virus(int y, int x, int sec) {
 		this.y = y;
 		this.x = x;
+		this.sec = sec;
 	}
 }
