@@ -9,7 +9,21 @@ import java.util.StringTokenizer;
 public class Main {
 	
 	private static final int BLOCKED = -1;
-
+	
+	/**
+	 * 상좌우하 순으로 탐색해서 가까운 손님을 먼저 태우려고 했으나 실패
+	 * 
+	 * ex) 좌좌좌 보다 우우상 위치의 손님이 더 우선순위가 높다.
+	 * 
+	 * pqueue로 탐색을 진행했으나 마찬가지로 실패하여 문제점을 찾아보니
+	 * 
+	 *     2  // 1, 2는 손님
+	 * 1 O O  // O는 pqueue에 들어간 위치 두개 다 같은 거리
+	 * ...    // 이런 상황에서는 pqueue는 왼쪽 O를 먼저 꺼내 1을 탐색하고 종료
+	 * 		  // 하지만 1, 2 모두 같은 거리이기 때문에 2번 손님을 먼저 태워야 한다.
+	 * 
+	 * 따라서 거리가 같은 손님을 pqueue에 담고 같은 거리 모두 탐색 후 손님을 결정
+	 */
 	private static int[] dy = { -1, 0, 0, 1 };
 	private static int[] dx = { 0, -1, 1, 0 };
 
