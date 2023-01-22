@@ -3,7 +3,6 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Solution {
@@ -14,22 +13,17 @@ public class Solution {
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st;
 		
-		PriorityQueue<Edge> pqueue = new PriorityQueue<>( (a, b) -> Double.compare(a.dist, b.dist));
-		Edge edge;
-		int t = 0, T, N, cnt, parent[], x[], y[];
-		double E, answer;
+		int t = 0, T, N, x[], y[];
+		double E, matrix[][];
 		
 		T = Integer.parseInt(in.readLine());
 		
 		while(t++ < T) {
 			N = Integer.parseInt(in.readLine());
 			
-			parent = new int[N];
 			x = new int[N];
 			y = new int[N];
-			pqueue.clear();
-			cnt = 1;
-			answer = 0;
+			matrix = new double[N][N];
 			
 			st = new StringTokenizer(in.readLine());
 			for(int i = 0; i < N; i++) {
@@ -44,57 +38,48 @@ public class Solution {
 			E = Double.parseDouble(in.readLine());
 			
 			for(int i = 0; i < N; i++) {
-				parent[i] = i;
 				for(int j = i + 1; j < N; j++) {
-					pqueue.offer(new Edge(i, j, x[i], y[i], x[j], y[j]));
+					matrix[j][i] = matrix[i][j] = Math.pow(x[i] - x[j], 2) + Math.pow(y[i] - y[j], 2);
 				}
 			}
 			
-			while(cnt < N) {
-				edge = pqueue.poll();
-				
-				if(!union(parent, edge.v1, edge.v2)) continue;
-				
-				cnt++;
-				answer += edge.dist;
-			}
-			
 			sb.append("#").append(t).append(" ")
-			.append(Math.round(E * answer))
+			.append(Math.round(E * prim(matrix, N)))
 			.append("\n");
 		}
 		
 		out.write(sb.toString());
 		out.flush();
 	}
-	
-	public static int find(int[] parent, int x) {
-		if(parent[x] == x) return x;
-		return parent[x] = find(parent, parent[x]);
-	}
-	
-	public static boolean union(int[] parent, int a, int b) {
-		int aParent = find(parent, a),
-			bParent = find(parent, b);
+
+	public static double prim(double[][] matrix, int N) {
+		boolean[] visited = new boolean[N];
+		double[] minDist = new double[N];
+		double min, total = 0;
+		int tmp = 0, vtx = 0, cnt = 0;
 		
-		if(aParent == bParent) return false;
-		
-		if(aParent < bParent)
-			parent[bParent] = aParent;
-		else
-			parent[aParent] = bParent;
-		
-		return true;
-	}
-	
-	static class Edge {
-		int v1, v2;
-		double dist;
-		
-		public Edge(int v1, int v2, int x1, int y1, int x2, int y2) {
-			this.v1 = v1;
-			this.v2 = v2;
-			this.dist = Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2);
+		for(int i = 1; i < N; i++) {
+			minDist[i] = matrix[0][i];
 		}
+		
+		while(cnt++ < N) {
+			vtx = tmp;
+			visited[vtx] = true;
+			total += minDist[vtx];
+			min = Double.MAX_VALUE;
+			
+			for(int i = 0; i < N; i++) {
+				if(visited[i]) continue;
+				
+				minDist[i] = Math.min(minDist[i], matrix[vtx][i]);
+				
+				if(min > minDist[i]) {
+					tmp = i;
+					min = minDist[i];
+				}
+			}
+		}
+		
+		return total;
 	}
 }
