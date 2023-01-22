@@ -94,12 +94,7 @@ public class Solution {
 		public Edge(int v1, int v2, int x1, int y1, int x2, int y2) {
 			this.v1 = v1;
 			this.v2 = v2;
-			this.dist = Math.pow((double)x1 - x2, 2) + Math.pow((double)y1 - y2, 2);
-		}
-		
-		@Override
-		public String toString() {
-			return String.valueOf((long)dist);
+			this.dist = Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2);
 		}
 	}
 }
