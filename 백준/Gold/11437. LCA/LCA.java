@@ -85,12 +85,12 @@ public class Main {
 			b = tmp;
 		}
 		
-		for(int e = maxE - 1; e >= 0; e--) {
-			if(depth[b] - depth[a] >= (1 << e)) {
-				b = parent[b][e];
+		if(depth[a] != depth[b])
+			for(int e = maxE - 1; e >= 0; e--) {
+				if(depth[b] - depth[a] >= (1 << e)) {
+					b = parent[b][e];
+				}
 			}
-		}
-
 		
 		if(a == b)
 			return a; // 같으면 a 리턴
