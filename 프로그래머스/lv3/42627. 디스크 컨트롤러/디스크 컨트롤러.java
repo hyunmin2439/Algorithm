@@ -1,9 +1,6 @@
 import java.util.*;
 
 class Solution {
-    
-    private int len;
-
     public int solution(int[][] jobs) {
         PriorityQueue<int[]> pqueue = new PriorityQueue<>( (a, b) -> {
             if(a[1] != b[1])
@@ -12,7 +9,7 @@ class Solution {
             return a[0] - b[0];
         });
         
-        int min, idx = 1, time = 0, len = 0, answer = 0, job[], tmp[][] = new int[500][];
+        int idx = 1, time = 0, answer = 0, job[];
         
         Arrays.sort(jobs, (a, b) -> a[0] - b[0]);
         
