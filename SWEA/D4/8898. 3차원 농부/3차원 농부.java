@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /*
  * LinkedList -> Queue 직접 구현( 8,969ms -> 2,461ms 73% 개선 )
  * 
- * Arrays.sort 사용 ( cows, horses 정적배열로 변경 범위 sort )
+ * Arrays.sort 사용 ( cows, horses 정적배열로 변경 범위 sort 메모리 사용량 감소 )
  */
 
 public class Solution {
