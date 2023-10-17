@@ -88,6 +88,7 @@ public class Main {
 		
 		if(depth[a] != depth[b])
 			for(int k = maxE - 1; k >= 0; k--) {
+				// depth가 나는 만큼의 부모로 이동하기 위해서 2^k 승 만큼 이동
 				if(depth[b] - depth[a] >= (1 << k)) {
 					b = parent[b][k];
 				}
@@ -97,12 +98,19 @@ public class Main {
 			return a; // 같으면 a 리턴
 			
 		for(int k = maxE - 1; k >= 0; k--) {
+			// maxE부터 확인하는 이유 -> 부모가 없다면 0 -> 즉, 그 위에 부모가 없는것
+			// 2^k -> 2^(k-1) 부모를 차례대로 확인하면서 다르다면 위치를 옮겨서 확인
+			// 노드가 16개 이고 한쪽으로 쏠려있는 편향된 트리라고 한다면 1 ~ 16노드까지 쭉 연결되어 있을 것. (maxE = 4)
+			// 16에서 1를 찾아가기 위해서는 2^3 -> 2^2 -> 2^1 -> 2^0 부모를 찾아가면 1에 도달
 			if(parent[a][k] != parent[b][k]) {
 				a = parent[a][k];
 				b = parent[b][k];
 			}
 		}
-		
+
+		// Lowest Common Ancestor의 자식을 찾아가는 것.
+		// 예제에서 a = 11, b = 14라고 한다면 최종적으로 a = 2, b = 3에서 종료
+		// a의 첫번째 부모(Lowest Common Ancestor)를 return 해줌
 		return parent[a][0];
 	}
 
